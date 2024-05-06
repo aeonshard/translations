@@ -1,0 +1,1012 @@
+gui:
+  user profile:
+    title: '&e%player_name%&f''&7s Profil'
+    items:
+      rating:
+        lore:
+          - ''
+          - '&e&lBewertung'
+          - '&7%rating_feedback%'
+          - ''
+          - '&7Bewertung&f: &6%rating_stars%'
+          - ''
+          - '&e%rating_date%'
+        name: <GRADIENT:65B1B4>&l%rater_name%</GRADIENT:2B6F8A>
+      user:
+        lore:
+          - '&7Letzter Login&F: '
+          - '&e%user_last_seen%'
+          - ''
+          - '&7Online&F: %true%'
+        name: <GRADIENT:65B1B4>&l%player_name%</GRADIENT:2B6F8A>
+  request:
+    title:
+      all: '&eMärkte &f- &7Alle Anfragen'
+      yours: '&eMärkte &f- &7Deine Anfragen'
+    items:
+      request:
+        lore:
+          self:
+            - '&7Preis&F: &a%request_price%'
+            - '&7Währung&f: &a%request_currency%'
+            - '&7Menge&f: &a%request_amount%'
+            - ''
+            - '&e&l%left_click% &7um die Anfrage abzubrechen'
+          others:
+            - '&7Preis&F: &a%request_price%'
+            - '&7Währung&f: &a%request_currency%'
+            - '&7Menge&f: &a%request_amount%'
+            - ''
+            - '&e&l%left_click% &7to Anfrage erfüllen'
+      create:
+        lore:
+          - '&7Verwende, um eine neue Anfrage für ein'
+          - '&7bestimmtes Item, das du brauchst.'
+          - ''
+          - '&e&l%left_click% &7um eine Anfrage zu starten'
+        name: <GRADIENT:65B1B4>&lErstelle Anfrage</GRADIENT:2B6F8A>
+      toggle:
+        lore:
+          - '&7Wird verwendet, um zwischen der Anzeige aller offenen'
+          - '&7Anfragen und nur Anfragen, die du gemacht hast'
+          - ''
+          - '&e&l%left_click% &7to toggle view'
+        name: <GRADIENT:65B1B4>&lAnsicht wechseln</GRADIENT:2B6F8A>
+  category add item:
+    title: '&eKategorie &f- &7%category_name% &f- &7Neues Item'
+    items:
+      offers:
+        lore:
+          - '&7Standardmäßig sind Angebote aktiviert, wenn aktiviert'
+          - '&7Spieler können ein Angebot für ein Item abgeben, das du möchtest.'
+          - ''
+          - '&7Aktuell&f: %enabled%'
+          - ''
+          - '&e&l%left_click% &7um Angebote umschalten'
+        name: <GRADIENT:65B1B4>&lAngebote umschalten</GRADIENT:2B6F8A>
+      price for all:
+        lore:
+          - '&7Standardmäßig bezieht sich der Preis auf ein einzelnes Item'
+          - '&7aus dem gesamten Stapel/Vorrat. Wenn aktiviert, wird der Preis'
+          - '&7für den gesamten Stapel/Vorrat gelten, der verfügbar ist.'
+          - ''
+          - '&7Aktuell&f: %enabled%'
+          - ''
+          - '&e&l%left_click% &7um den Preismodus umzuschalten'
+        name: <GRADIENT:65B1B4>&lWechsel 'Wholesale'</GRADIENT:2B6F8A>
+      price:
+        lore: '&7Der aktuelle Preis ist &f: &a%market_item_price%'
+        name: <GRADIENT:65B1B4>&LItem Price</GRADIENT:2B6F8A>
+      new item:
+        lore: '&a&lKlicke &7um das Item zur Kategorie hinzuzufügen'
+        name: <GRADIENT:65B1B4>&lItem hinzufügen</GRADIENT:2B6F8A>
+      custom currency:
+        lore:
+          - '&7----------------------------'
+          - '&eDieses Item ist die'
+          - '&ebenutzerdefinierte Währung'
+          - '&7----------------------------'
+      currency:
+        lore:
+          - '&7Passe an welche Währung du'
+          - '&7verwenden wirst für dieses Item.'
+          - ''
+          - '&7Aktuell&f: &e%market_item_currency%'
+          - ''
+          - '&e&l%left_click% &7Währung bearbeiten'
+        name: <GRADIENT:65B1B4>&lWährung wechseln</GRADIENT:2B6F8A>
+  market view:
+    title: '%market_display_name%'
+    items:
+      search:
+        lore:
+          - '&7Benutze die Suche für Items in '
+          - '&7allen offen Kategorien in diesem Markt'
+          - ''
+          - '&e&l%left_click% &7um im Markt zu suchen'
+        name: <GRADIENT:65B1B4>&lSuche</GRADIENT:2B6F8A>
+      review:
+        lore:
+          - '&7Wird verwendet, um eine Bewertung des aktuellen Marktes zu hinterlassen'
+          - '&7Es gibt eine Verzögerung zwischen dem Hinterlassen von Bewertungen.'
+          - ''
+          - '&e&l%left_click% &7um eine Bewertung zu hinterlassen'
+          - '&b&l%right_click% &7um Bewertungen anzusehen'
+        name: <GRADIENT:65B1B4>&LBewertung</GRADIENT:2B6F8A>
+      profile:
+        lore:
+          - '&7Wird verwendet, um das Profil des'
+          - '&7aktuellen Marktinhabers&F:'
+          - '&7&e%market_owner% zu sehen.'
+          - ''
+          - '&e&l%left_click% &7um das Profil des Besitzers anzuzeigen'
+        name: <GRADIENT:65B1B4>&lProfil</GRADIENT:2B6F8A>
+      category:
+        lore:
+          - ''
+          - '&e&l%left_click% &7&7um die Kategorie zu öffnen'
+        name: '%category_display_name%'
+  shared buttons:
+    back button:
+      lore: '&e&l%left_click% &7um zurück zu gehen'
+      name: <GRADIENT:65B1B4>&LZurück</GRADIENT:2B6F8A>
+    previous button:
+      lore: '&e&l%left_click% &7um eine Seite zurück zu gehen'
+      name: <GRADIENT:65B1B4>&lVorherige Seite</GRADIENT:2B6F8A>
+    next button:
+      lore: '&e&l%left_click% &7um zur nächsten Seite zu kommen'
+      name: <GRADIENT:65B1B4>&lNächste Seite</GRADIENT:2B6F8A>
+    exit button:
+      lore: '&e&l%left_click% &7um Menü zu verlassen'
+      name: <GRADIENT:65B1B4>&LVerlassen</GRADIENT:2B6F8A>
+  offer creation:
+    title: '&eMärkte &f- &7Verchicke ein Angebot'
+    items:
+      offered amount:
+        lore:
+          - '&7Aktuelles Angebot &f: &a%offer_amount%'
+          - ''
+          - '&e&l%left_click% &7Den Angebotsbetrag ändern'
+        name: <GRADIENT:65B1B4>&LAngebotsbetrag</GRADIENT:2B6F8A>
+      breakdown:
+        lore:
+          - ''
+          - '&a&lDu &7(&f%sender_name%&7) &eforderst beim &b&lVerkäufer &7(&f%seller_name%&7)'
+          - '&fx&a%offer_amount% &a%offer_currency% &efür &fx&a%requested_amount%
+            &a%market_item_name% an'
+          - ''
+          - '&c&oDieses Angebot wird erstellt, unter der Annahme, dass die Lagerbestände'
+          - '&c&ogleich bleiben. Falls sich dies ändert, wird das Angebot automatisch
+            ungültig.'
+        name: <GRADIENT:65B1B4>&LAngebotsänderung</GRADIENT:2B6F8A>
+      currency:
+        lore:
+          - '&7Ändere welche Währung du haben möchtest'
+          - '&7für dieses Marktitem.'
+          - ''
+          - '&7Aktuell&f: &e%offer_currency%'
+          - ''
+          - '&e&l%left_click% &7um Währung zu ändern'
+        name: <GRADIENT:65B1B4>&lÄndere Währung</GRADIENT:2B6F8A>
+      create offer:
+        lore: '&e&l%left_click% &7um eine Anforderung zu senden'
+        name: <GRADIENT:65B1B4>&LAnforderung erstellen</GRADIENT:2B6F8A>
+  purchase item:
+    title: '%market_display_name% &7- &eZur Kasse'
+    items:
+      increment one:
+        lore:
+          - ''
+          - '&e&l%left_click% &7um &a1 &7zu erhöhen'
+        name: '&a&l+1'
+      increment five:
+        lore:
+          - ''
+          - '&e&l%left_click% &7zum erhöhen um &a5'
+        name: '&a&l+5'
+      purchasing item:
+        lore:
+          - '&7----------------------------'
+          - '&7Verfügbar Stock&F: &e%market_item_stock%'
+          - '&7----------------------------'
+      decrement ten:
+        lore:
+          - ''
+          - '&e&l%left_click% &7zum verringern um &c10'
+        name: '&a&l-10'
+      buy:
+        lore:
+          - ''
+          - '&e&l%left_click% &7um Item zu kaufen(s)'
+        name: <GRADIENT:65B1B4>&lEinkauf</GRADIENT:2B6F8A>
+      price breakdown:
+        lore:
+          total:
+            - '&b&lInsgesamt'
+            - '&a%purchase_total%'
+          subtotal:
+            - '&b&lZwischensumme'
+            - '&a%purchase_sub_total%'
+            - ''
+          tax:
+            - '&b&LSteuern'
+            - '&a%sales_tax%'
+            - ''
+          info:
+            - '&7Einkaufmenge&f: &E%purchase_quantity%'
+            - '&7Preis pro Item&f: &a%market_item_price%'
+            - '&7Währung&f: %market_item_currency%'
+            - ''
+        name: <GRADIENT:65B1B4>&lPreisaufschlüsselung</GRADIENT:2B6F8A>
+      increment ten:
+        lore:
+          - ''
+          - '&e&l%left_click% &7zum erhöhen von &a10'
+        name: '&a&l+10'
+      custom currency:
+        lore:
+          - '&7----------------------------'
+          - '&eDieses Item ist die verlangete Währung'
+          - '&7----------------------------'
+      decrement five:
+        lore:
+          - ''
+          - '&e&l%left_click% &7zum verringern um &c5'
+        name: '&a&l-5'
+      decrement one:
+        lore:
+          - ''
+          - '&e&l%left_click% &7zum verringern um &c1'
+        name: '&a&l-1'
+  new rating:
+    title: '%market_display_name% &f- &7Bewertung'
+    items:
+      star:
+        lore: '&e&l%left_click% &7zum Bewerten &e%star_level% &7Sterne'
+        name: <GRADIENT:65B1B4>&l%star_level% Sterne</GRADIENT:2B6F8A>
+      create:
+        lore:
+          - '&7Wenn du mit deiner Bewertung zufrieden bist'
+          - '&7dann kannst du dies verwenden, um es zu bestätigen.'
+          - ''
+          - '&e&l%left_click% &7um Marktbewertung zu hinterlassen.'
+        name: <GRADIENT:65B1B4>&lReview hinterlassen</GRADIENT:2B6F8A>
+      message:
+        lore:
+          - '&7Der Nachrichteninhalt der Bewertung,'
+          - '&7Eine kurze Aussage, warum du so Bewertet hast.'
+          - ''
+          - '&7Aktuelle Nachricht&f:'
+          - '&e%review_message%'
+          - ''
+          - '&e&l%left_click% &7um Nachricht zu editieren.'
+        name: <GRADIENT:65B1B4>&lBewertungsnachricht</GRADIENT:2B6F8A>
+  layout editor:
+    title:
+      category: '&eMärkte &f- &7Layout &F- &7Kategorie'
+      home: '&eMärkte &f- &7Layout &F- &7Haputmenü'
+    items:
+      search:
+        lore:
+          - '&7Wird verwendet, um nach Artikeln in allen'
+          - '&7offenen Kategorien dieses Marktes zu suchen.'
+        name: <GRADIENT:65B1B4>&lSuche</GRADIENT:2B6F8A>
+      review:
+        lore:
+          - '&7Wird verwendet, um eine Bewertung des aktuellen Marktes zu hinterlassen.'
+          - '&7Es gibt eine Verzögerung zwischen dem Hinterlassen von Bewertungen.'
+        name: <GRADIENT:65B1B4>&LBewertung</GRADIENT:2B6F8A>
+      profile:
+        lore:
+          - '&7Wird verwendet, um das Profil des aktuellen'
+          - '&7Markteigentümers&F: &e%market_owner% &7anzusehen.'
+        name: <GRADIENT:65B1B4>&lProfil</GRADIENT:2B6F8A>
+      empty slot:
+        lore:
+          - '&7Dies ist ein freier Steckplatz. Du kannst hier'
+          - '&7Dekorationen hinzufügen, ihn als belegten Steckplatz '
+          - '&7zuweisen oder sogar SteuerIteme verschieben.'
+          - ''
+          - '&e&l%left_click% &7um Füllsteckplatz festzulegen'
+          - '&b&l%right_click% &7um ein SteuerItem hierher zu verschieben'
+          - '&d&l%right_click% &7mit einem Gegenstand auf deinem Cursor'
+          - '&7um diesen Steckplatz zu dekorieren.'
+        name: <GRADIENT:65B1B4>&lLeerer Slot</GRADIENT:2B6F8A>
+      decoration slot:
+        lore:
+          - '&7Dies ist ein Dekorationsslot'
+          - ''
+          - '&e&l%left_click% &7um einen leeren Steckplatz zu machen'
+          - '&d&l%right_click% &7mit einem Gegenstand auf deinem Cursor'
+          - '&7um das Dekorationsobjekt zu ändern.'
+        name: <GRADIENT:65B1B4>&lDekorationssteckplatz</GRADIENT:2B6F8A>
+      fill slot:
+        lore:
+          - '&7Dieser Slot wird belegt mit'
+          - '&7deiner Marktkategorie.'
+          - ''
+          - '&e&l%left_click% &7um diesen Slot auszuschalten.'
+        name: <GRADIENT:65B1B4>&lFüllslot</GRADIENT:2B6F8A>
+  currency picker:
+    title: '&eMärkte &f- &7Wähle eine Währung'
+    items:
+      custom currency:
+        lore:
+          - '&7Wenn du ein bestimmtes Item als Währung verwenden'
+          - '&7möchtest, kannst du es hier festlegen.'
+          - ''
+          - '&b&l%right_click% &7um das Item Währungsitem zu wählen &eoder'
+          - '&e&l%left_click% &7mit dem Item das du nutzen möchtest'
+          - '&7als die Währung auf dieses Symbol.'
+        name: <GRADIENT:65B1B4>&lBenutzerdefiniertes Item</GRADIENT:2B6F8A>
+  search:
+    title: '&eMärkte &f- &7Suche &f- &7%search_keywords%'
+    items:
+      item:
+        lore:
+          info:
+            - '&7Preis&f: &a%market_item_price%'
+            - '&7Währung&f: &e%market_item_currency%'
+            - '&7Bestand&f: &e%market_item_stock%'
+            - '&7Großmarkt&f: %market_item_wholesale%'
+            - '&7Besitzer&F: &e%market_item_owner%'
+            - '&7Markt&F: %market_item_market_name%'
+            - ''
+  bank:
+    title: '&eMärkte &f- &7Bank'
+    items:
+      add:
+        lore: '&eLege Gegenstände hier ab, um diese einzuzahlen'
+        name: <GRADIENT:65B1B4>&LBestand</GRADIENT:2B6F8A>
+      entry:
+        lore:
+          - '&7Menge&f: &E%entry_quantity%'
+          - ''
+          - '&e&l%left_click% &7um alles abzuheben'
+          - '&b&l%right_click% &7um eine bestimmte Menge abzuheben'
+  all Märkte:
+    title: '&eMärkte &f- &7Öffne Märkte'
+    items:
+      market:
+        lore:
+          - ''
+          - '&7Bewertungen&f: &6%market_ratings_stars% &f(&7%market_ratings_total%&f)'
+          - ''
+          - '&e&L%left_click% &7um Markt zu betreten.'
+      filter:
+        lore:
+          - '&7Nutze um Märkte zu filtern mit'
+          - '&7Name,items,Bewertungen and zuletzt geupdatet'
+          - ''
+          - '&7Sortiertyp&F: &e%market_sort_type%'
+          - ''
+          - '&e&lClick &7um Filter zu wechseln.'
+        name: <GRADIENT:65B1B4>&LFilter</GRADIENT:2B6F8A>
+      search:
+        lore:
+          - '&7Wird verwendet, um nach Artikeln in'
+          - '&7jedem derzeit geöffneten Markt zu suchen.'
+          - ''
+          - '&e&l%left_click% &7um Märkte zu suchen.'
+        name: <GRADIENT:65B1B4>&lSuche</GRADIENT:2B6F8A>
+  ratings:
+    title: '%market_display_name% &f- &7Bewertungen'
+    items:
+      rating:
+        lore:
+          - ''
+          - '&e&lBewertung'
+          - '&7%rating_feedback%'
+          - ''
+          - '&7Sterne&f: &6%rating_stars%'
+          - ''
+          - '&e%rating_date%'
+        name: <GRADIENT:65B1B4>&l%rater_name%</GRADIENT:2B6F8A>
+  market category edit:
+    title: '&eMärkte &f- &7Editiere &f- &7%category_name%'
+    items:
+      market item:
+        lore:
+          - '&7----------------------------'
+          - '&7Preis&f: &a%market_item_price%'
+          - '&7Währung&f: &e%market_item_currency%'
+          - '&7Bestand&f: &e%market_item_stock%'
+          - '&7Großmarkt&f: &e%market_item_wholesale%'
+          - '&7Angebote akzeptieren&f: &e%market_item_accepting_offers%'
+          - ''
+          - '&e&l%left_click% &7um Preis zu editieren'
+          - '&b&l%right_click% &7um Einstellungen zu ändern'
+          - '&c&l%drop_button% &7um Items zu entfernen'
+          - '&7----------------------------'
+      settings:
+        lore:
+          - '&7Dies wird verwendet, um Marktdetails zu konfigurieren.'
+          - ''
+          - '&a&lKlicke &7um die Einstellungen zu ändern'
+        name: <GRADIENT:65B1B4>&lKategorie Einstellungen</GRADIENT:2B6F8A>
+      display name:
+        lore:
+          - '&7Der Anzeigename deiner Kategorie, ist das,'
+          - '&7was andere bei der Suche sehen.'
+          - ''
+          - '&7Aktuell&f: %category_display_name%'
+          - ''
+          - '&a&lKlicke &7um Anzeigenamen zu ändern für den Markt'
+        name: <GRADIENT:65B1B4>&lKategoriename</GRADIENT:2B6F8A>
+      icon:
+        lore:
+          - '&7Das Symbol deiner Kategorie, das ist das,'
+          - '&7was anderen Spielern gezeigt wird.'
+          - ''
+          - '&7Aktuell&f: %category_icon%'
+          - ''
+          - '&e&l%left_click% &7um den Selektor zu verwenden'
+          - '&b&l%right_click% &7während du den Gegenstand hältst, den du'
+          - '&7als Kategoriesymbol verwenden möchtest.'
+        name: <GRADIENT:65B1B4>&lKategoriesymbol</GRADIENT:2B6F8A>
+      description:
+        lore:
+          - '&7Eine kurze Beschreibung der Kategorie, etwas,'
+          - '&7das beschreibt, was die Kategorie enthält.'
+          - ''
+          - '&7Aktuell&f: '
+          - '%category_description%'
+          - ''
+          - '&a&lKlicke &7um die Beschreibung zu ändern.'
+        name: <GRADIENT:65B1B4>&lKategorienbeschreibung</GRADIENT:2B6F8A>
+      delete category:
+        lore:
+          - '&7Diese Aktion &4&lKANN NICHT &7rückgängig gemacht werden.!'
+          - ''
+          - '&a&lKlicke &7um diese Kategorie zu löschen.'
+        name: '&c&lLösche Kategorie'
+  offers:
+    title: '&eMärkte &f- &7Angebote'
+    items:
+      offer:
+        lore:
+          footer: '&7----------------------------'
+          reject: '&d&l%right_click% &7Um dieses Angebot abzulehnen'
+          reject stock:
+            - '&C&ODu kannst dieses Item nur ablehnen, da es'
+            - '&c&onicht mehr verfügbar ist oder der Lagerbestand zu niedrig ist. '
+            - ''
+          header: '&7----------------------------'
+          info:
+            - '&b&lOriginal'
+            - '&7Preis&F: &a%market_item_price%'
+            - '&7Währung&f: &a%market_item_currency%'
+            - '&7Menge&f: &a%offer_requested_amount%'
+            - ''
+            - '&d&lAngeboten'
+            - '&7Preis&F: &a%offer_amount%'
+            - '&7Währung&F: &a%offer_currency%'
+            - ''
+          accept: '&e&l%left_click% &7um dieses Angebot anzunehmen.'
+  market settings:
+    title: '&eMärkte &f- &7Einstellungen'
+    items:
+      banned users:
+        lore:
+          - '&7Wird verwendet, um bestimmte Benutzer zur Sperrliste'
+          - '&7deines Marktes hinzuzufügen und zu entfernen. Gesperrte Benutzer können
+            nichts kaufen.'
+          - ''
+          - '&e&l%left_click% &7um gesperrte Benutzer zu bearbeiten'
+        name: <GRADIENT:65B1B4>&lGebannte Nutzer von deinem Markt</GRADIENT:2B6F8A>
+      category layout:
+        lore:
+          - '&7Das Kategorielayout ist der Ort,'
+          - '&7an dem alle von dir in einer Kategorie'
+          - '&7hinzugefügten Artikel anderen angezeigt werden.'
+          - ''
+          - '&e&l%left_click% &7um das Layout zu editieren.'
+          - '&b&l%right_click% &7Um ein Item für den Hintergrund zu suchen.'
+          - '&d&l%right_click% &7mit einem Gegenstand auf deinem Cursor'
+          - '&7um den Hintergrund für dieses Layout festzulegen'
+        name: <GRADIENT:65B1B4>&lKategorielayout</GRADIENT:2B6F8A>
+      home layout:
+        lore:
+          - '&7Das Startlayout ist die Hauptansicht'
+          - '&7deines Marktes, hier werden alle deine'
+          - '&7Artikel angezeigt.'
+          - ''
+          - '&e&l%left_click% &7um das Startlayout zu bearbeiten'
+          - '&b&l%right_click% &7um ein Item für den Hintergrund zu suchen.'
+          - '&d&l%right_click% &7mit einem Gegenstand auf deinem Cursor'
+          - '&7um den Hintergrund für dieses Layout festzulegen'
+        name: <GRADIENT:65B1B4>&lStartlayout</GRADIENT:2B6F8A>
+      toggle close when out of stock:
+        lore:
+          - '&7Wird verwendet, um festzulegen, ob dein Markt automatisch'
+          - '&7geschlossen wird, wenn dein Lagerbestand vollständig aufgebraucht ist.'
+          - ''
+          - '&7Aktuell&F: %enabled%'
+          - ''
+          - '&e&l%left_click% &7um die automatische Schließung zu aktivieren/deaktivieren'
+        name: <GRADIENT:65B1B4>&lAutomatische Schließung umschalten</GRADIENT:2B6F8A>
+      toggle open:
+        lore:
+          - '&7Wird verwendet, um festzulegen, ob dein Markt'
+          - '&7geöffnet/geschlossen ist. Wenn geschlossen, sehen Spieler ihn nicht.'
+          - ''
+          - '&7Aktuell&F: %open%'
+          - ''
+          - '&e&l%left_click% &7um Markt zu öffnen/schließen'
+        name: <GRADIENT:65B1B4>&lÖffnen/Schließen umschalten</GRADIENT:2B6F8A>
+  user picker:
+    title: '&eMärkte &f- &7Benutzer auswählen'
+  offline payments:
+    title: '&eMärkte &f- &7Zahlungen sammeln'
+    items:
+      payment:
+        lore:
+          - ''
+          - '&7Erhaltene Menge&f: &a%payment_total%'
+          - ''
+          - '&b&lGrund'
+          - '%payment_reason%'
+          - ''
+          - '&d&lErhalten am'
+          - '&e%payment_date%'
+          - ''
+          - '&e&l%left_click% &7um Zahlung zu sammeln'
+  market overview:
+    title: '&eMärkte &f- &7Dein Markt'
+    items:
+      settings:
+        lore:
+          - '&7Hiermit können Marktdetails konfiguriert werden.'
+          - ''
+          - '&a&lKlicke &7um Einstellungen anzupassen'
+        name: <GRADIENT:65B1B4>&LMarkteinstellungen</GRADIENT:2B6F8A>
+      new item mobile:
+        lore:
+          - '&7Um auf Mobilgeräten ein neues Item zu erstellen.'
+          - ''
+          - '&f/&eMärkte hinzufügen &b%category_id% &a<Preis>'
+          - '&7Zusätzlich kannst du &e-nooffers &7und/oder &e-wholesale &7nach dem
+            Preis hinzufügen'
+          - ''
+          - '&7Beispiel&f: &e/Märkte hinzufügen %category_id% 25'
+          - '&7Beispiel&f: &e/Märkte hinzufügen %category_id% 95 -nooffers'
+          - '&7Beispiel&f: &e/Märkte hinzufügen %category_id% 500 -wholesale'
+          - '&7Beispiel&f: &e/Märkte hinzufügen %category_id% 35 -wholesale -nooffers'
+          - ''
+        name: <GRADIENT:65B1B4>&LNeues Item</GRADIENT:2B6F8A>
+      display name:
+        lore:
+          - '&7Der Anzeigename deines Marktes, dies'
+          - '&7ist das, was andere bei der Suche sehen werden.'
+          - ''
+          - '&7Aktuell&f: %market_display_name%'
+          - ''
+          - '&a&lKlicke &7um Anzeigenamen zu ändern'
+        name: <GRADIENT:65B1B4>&LMarktname</GRADIENT:2B6F8A>
+      delete market:
+        lore:
+          - '&7Diese Aktion &4&lKANN NICHT &7rückgängig gemacht werden!'
+          - '&8Alle Iteme, die nicht in Ihr Inventar passen,'
+          - '&8werden auf den Boden fallen gelassen!'
+          - ''
+          - '&a&lKlicke &7um Markt zu löschen'
+        name: '&c&lMarkt löschen'
+      new item:
+        lore:
+          - '&7Wird verwendet, um ein neues Item hinzuzufügen'
+          - '&a&lKlicke &7um Item zur Kategorie hinzuzufügen'
+        name: <GRADIENT:65B1B4>&LNeues Item</GRADIENT:2B6F8A>
+      description:
+        lore:
+          - '&7Eine kurze Beschreibung des Marktes, etwas'
+          - '&7um die Aufmerksamkeit auf sich zu ziehen'
+          - ''
+          - '&7Aktuell&f: '
+          - '%market_description%'
+          - ''
+          - '&a&lKlicke &7um Beschreibung zu ändern'
+        name: <GRADIENT:65B1B4>&LMarktbeschreibung</GRADIENT:2B6F8A>
+      new category:
+        lore:
+          - '&7Wird verwendet, um eine neue Kategorie zu erstellen'
+          - '&a&lKlicke &7um neue Kategorie zu erstellen'
+        name: <GRADIENT:65B1B4>&LNeue Kategorie</GRADIENT:2B6F8A>
+  market banned users:
+    title: '&eMärkte &f- &7Einstellungen &F- &cSperrungen'
+    items:
+      new ban:
+        lore:
+          - '&7Wird verwendet, um einen neuen Benutzer zur Sperrliste hinzuzufügen'
+          - '&e&lKlicke &7um einen Spieler zu sperren'
+        name: <GRADIENT:65B1B4>&lGesperrten Benutzer hinzufügen</GRADIENT:2B6F8A>
+      player:
+        lore:
+          - '&7Dieser Benutzer ist derzeit vom'
+          - '&7Interagieren mit deinem Markt ausgeschlossen.'
+          - ''
+          - '&e&lKlicke &7um Sperre aufzuheben'
+        name: <GRADIENT:65B1B4>&l%player_name%</GRADIENT:2B6F8A>
+  transactions:
+    title: '&eMärkte &f- &7Transaktionen'
+    items:
+      entry:
+        lore:
+          - '&7----------------------------'
+          - '&7Menge&f: &E%item_quantity%'
+          - '&7Preis&F: &a%market_item_price%'
+          - '&7Währung&f: &a%market_item_currency%'
+          - ''
+          - '&7Käufer&f: &e%buyer_name%'
+          - '&7Datum&f: &e%transaction_date%'
+          - ''
+  layout control picker:
+    title: '&eMärkte &f- &7Layoutsteuerung auswählen'
+    items:
+      exit:
+        lore:
+          - '&7Wird verwendet, um das Marktfenster zu verlassen'
+          - '&e&lKlicke &7um diese Steuerung auszuwählen'
+        name: <GRADIENT:65B1B4>&lBeenden-Taste</GRADIENT:2B6F8A>
+      search:
+        lore:
+          - '&7Wird verwendet, um in deinem Markt nach Itemen zu suchen'
+          - '&e&lKlicke &7um diese Steuerung auszuwählen'
+        name: <GRADIENT:65B1B4>&lSuchtaste</GRADIENT:2B6F8A>
+      prev page:
+        lore:
+          - '&7Wird verwendet, um zurückzunavigieren, falls mehrere Seiten vorhanden
+            sind'
+          - '&e&lKlicke &7um diese Steuerung auszuwählen'
+        name: <GRADIENT:65B1B4>&lZurück-Taste</GRADIENT:2B6F8A>
+      review:
+        lore:
+          - '&7Wird verwendet, um die Marktbewertung zu öffnen'
+          - '&e&lKlicke &7um diese Steuerung auszuwählen'
+        name: <GRADIENT:65B1B4>&lBewertungstaste</GRADIENT:2B6F8A>
+      profile:
+        lore:
+          - '&7Wird verwendet, um Ihr Profil zu öffnen'
+          - '&e&lKlicke &7um diese Steuerung auszuwählen'
+        name: <GRADIENT:65B1B4>&lProfiltaste</GRADIENT:2B6F8A>
+      next page:
+        lore:
+          - '&7Wird verwendet, um vorwärts zu navigieren, falls mehrere Seiten vorhanden
+            sind'
+          - '&e&lKlicke &7um diese Steuerung auszuwählen'
+        name: <GRADIENT:65B1B4>&lWeiter-Taste</GRADIENT:2B6F8A>
+  edit market item:
+    title: '&eMärkte &f- &7Itemeinstellungen'
+    items:
+      offers:
+        lore:
+          - Wenn aktiviert, können andere Spieler Ihnen
+          - '&7Angebote für dieses Item senden'
+          - ''
+          - '&7Aktuell&F: %enabled%'
+          - ''
+          - '&e&lKlicke &7um Angebote zu aktivieren/deaktivieren'
+        name: <GRADIENT:65B1B4>&LAngebote</GRADIENT:2B6F8A>
+      wholesale:
+        lore:
+          - Wenn aktiviert, gilt der Preis für
+          - '&7den gesamten Stapel/Bestand, der verfügbar ist.'
+          - ''
+          - '&7Aktuell&F: %enabled%'
+          - ''
+          - '&e&lKlicke &7um Großhandel zu aktivieren/deaktivieren'
+        name: <GRADIENT:65B1B4>&LGroßhandel</GRADIENT:2B6F8A>
+      currency:
+        lore:
+          - '&7Wird verwendet, um die Währung anzupassen, die du'
+          - '&7für dieses bestimmte Item akzeptieren willst.'
+          - ''
+          - '&7Aktuell&f: &e%market_item_currency%'
+          - ''
+          - '&e&lKlicke &7um Währung zu ändern'
+        name: <GRADIENT:65B1B4>&lWährung wechseln</GRADIENT:2B6F8A>
+      stock:
+        lore:
+          - '&7Wenn du von diesem Item etwas in deinem'
+          - '&7Inventar hast, kannst du es hier &eablegen &7um es hinzuzufügen.'
+          - ''
+          - '&7Aktueller Bestand&F: &e%market_item_stock%'
+        name: <GRADIENT:65B1B4>&lBestand</GRADIENT:2B6F8A>
+  market category view:
+    title: '%market_display_name% &7- %category_display_name%'
+    items:
+      search:
+        lore:
+          - '&7Wird verwendet, um nach Itemen innerhalb'
+          - '&7dieser spezifischen Kategorie zu suchen'
+          - ''
+          - '&e&lKlicke &7um Kategorie zu durchsuchen'
+        name: <GRADIENT:65B1B4>&lSuche</GRADIENT:2B6F8A>
+      item:
+        lore:
+          view currency: '&d&l%shift_right_click% &7um Währung anzuzeigen'
+          footer: '&7----------------------------'
+          make offer: '&b&l%right_click% &7um Angebot zu machen'
+          buy: '&e&l%left_click% &7um Item zu kaufen'
+          header: '&7----------------------------'
+          info:
+            - '&7Preis&f: &a%market_item_price%'
+            - '&7Währung&f: &e%market_item_currency%'
+            - '&7Bestand&f: &e%market_item_stock%'
+            - '&7Großhandel&f: %market_item_wholesale%'
+            - ''
+      review:
+        lore:
+          - '&7Wird verwendet, um eine Bewertung des aktuellen Marktes zu hinterlassen'
+          - '&7Es gibt eine Verzögerung zwischen dem Verlassen von Bewertungen.'
+          - ''
+          - '&e&lKlicke &7um eine Bewertung zu hinterlassen'
+          - '&b&l%right_click% &7um Bewertungen anzuzeigen'
+        name: <GRADIENT:65B1B4>&LBewertung</GRADIENT:2B6F8A>
+      profile:
+        lore:
+          - '&7Wird verwendet, um das Profil des'
+          - '&7aktuellen Marktbesitzers&F: &e%market_owner%'
+          - ''
+          - '&e&lKlicke &7um Profil des Besitzers anzuzeigen'
+        name: <GRADIENT:65B1B4>&lProfil</GRADIENT:2B6F8A>
+  create request:
+    title: '&eMärkte &f- &7Neue Anfrage'
+    items:
+      amount:
+        lore:
+          - '&7Aktuell&f: &a%request_amount%'
+          - ''
+          - '&e&lKlicke &7um die Anfragemenge zu ändern'
+        name: <GRADIENT:65B1B4>&lAnfrage Menge</GRADIENT:2B6F8A>
+      requested item:
+        lore:
+          - '&7----------------------------'
+          - '&e&lKlicke &7um einen Materialauswahl zu öffnen &eoder'
+          - '&b&l%right_click% &7mit dem gewünschten Item'
+          - '&7um mehr davon zu fordern.'
+          - '&7----------------------------'
+        name: <GRADIENT:65B1B4>&lKein Item ausgewählt</GRADIENT:2B6F8A>
+      price:
+        lore:
+          - '&7Aktuell&f: &a%request_price%'
+          - ''
+          - '&e&lKlicke &7um den Angebotspreis zu ändern'
+        name: <GRADIENT:65B1B4>&lAngebotener Betrag</GRADIENT:2B6F8A>
+      create:
+        lore: '&e&lKlicke &7um Anfrage zu erstellen'
+        name: <GRADIENT:65B1B4>&lAnfrage erstellen</GRADIENT:2B6F8A>
+      currency:
+        lore:
+          - '&7Wird verwendet, um anzupassen, welche Währung du'
+          - '&7für die angeforderten Items anbieten möchtest.'
+          - ''
+          - '&7Aktuell&f: &e%request_currency%'
+          - ''
+          - '&e&lKlicke &7um Währung zu ändern'
+        name: <GRADIENT:65B1B4>&lWährung ändern</GRADIENT:2B6F8A>
+  market item view:
+    title: '%market_display_name% &7- %market_item_display_name%'
+    items:
+      offer:
+        lore:
+          - '&7Aktuell&f: &a%market_item_price% &e%market_item_currency%'
+          - ''
+          - '&e&lKlicke &7um Angebot zu machen'
+        name: <GRADIENT:65B1B4>&lAngebot machen</GRADIENT:2B6F8A>
+      stock:
+        lore:
+          - '&7Aktuell&f: &e%market_item_stock%'
+          - ''
+          - '&e&lKlicke &7um Item zu erwerben'
+        name: <GRADIENT:65B1B4>&lItem erwerben</GRADIENT:2B6F8A>
+      review:
+        lore:
+          - '&7Aktuell&f: &e%market_item_rating%'
+          - ''
+          - '&e&lKlicke &7um Bewertungen anzuzeigen'
+        name: <GRADIENT:65B1B4>&lBewertungen</GRADIENT:2B6F8A>
+      info:
+        lore:
+          - '&7Wird verwendet, um zusätzliche Informationen'
+          - '&7über dieses Item anzuzeigen.'
+          - ''
+          - '&e&lKlicke &7um weitere Informationen anzuzeigen'
+        name: <GRADIENT:65B1B4>&lInformationen</GRADIENT:2B6F8A>
+      profile:
+        lore:
+          - '&7Wird verwendet, um das Profil des'
+          - '&7Verkäufers anzuzeigen&F: &e%market_item_owner%'
+          - ''
+          - '&e&lKlicke &7um das Profil anzuzeigen'
+        name: <GRADIENT:65B1B4>&lProfil</GRADIENT:2B6F8A>
+  main view:
+    title: '&eMärkte &f- &7Startseite'
+    items:
+      offers:
+        lore:
+          - '&7Wird verwendet, um alle Angebote anzuzeigen,'
+          - '&7die andere Benutzer bezüglich deiner Items gesendet haben.'
+          - ''
+          - '&e&lKlicke &7um Angebote anzuzeigen'
+        name: <GRADIENT:65B1B4>&lAngebote</GRADIENT:2B6F8A>
+      bank:
+        lore:
+          - '&7Wird verwendet, um jegliche physische (Gegenstands-) Währung zu speichern,'
+          - '&7die du als Zahlung für Angebote verwenden möchten.'
+          - ''
+          - '&e&lKlicke &7um Bank zu öffnen'
+        name: <GRADIENT:65B1B4>&lDeine Item Bank</GRADIENT:2B6F8A>
+      payments:
+        lore:
+          - '&7Wird verwendet, um Zahlungen einzusammeln, die'
+          - '&7an deinem Markt gemacht wurden, während du offline warst.'
+          - ''
+          - '&e&lKlicke &7um Zahlungen einzusammeln'
+        name: <GRADIENT:65B1B4>&lZahlungen sammeln</GRADIENT:2B6F8A>
+      your market:
+        view: '&a&lKlicke &7um deinen Markt zu sehen'
+        lore:
+          - '&7Sie haben derzeit keinen Markt'
+          - ''
+          - '&a&lKlicke &7um einen zu erstellen.'
+        name: '&e&lIhr Markt'
+      global:
+        lore:
+          - '&7Wird verwendet, um alle offenen Märkte anzuzeigen,'
+          - '&7die von anderen Spielern betrieben werden.'
+          - ''
+          - '&e&lKlicke &7um offene Märkte anzuzeigen'
+        name: <GRADIENT:65B1B4>&lAlle Märkte</GRADIENT:2B6F8A>
+      requests:
+        lore:
+          - '&7Wird verwendet, um alle offenen Spieleranfragen anzuzeigen'
+          - '&7oder um deine eigene Anfrage zu erstellen.'
+          - ''
+          - '&e&lKlicke &7um Anfragen anzuzeigen'
+        name: <GRADIENT:65B1B4>&lAnfragen</GRADIENT:2B6F8A>
+  all markets:
+    title: '&eMärkte &f- &7Offene Märkte'
+    items:
+      market:
+        lore:
+          - ''
+          - '&7Bewertungen&f: &6%market_ratings_stars% &f(&7%market_ratings_total%&f)'
+          - ''
+          - '&e&L%left_click% &7Zum Betreten des Marktes'
+      filter:
+        lore:
+          - '&7Zum Filtern von Märkten nach'
+          - '&7Name, Artikel, Bewertungen und zuletzt aktualisiert'
+          - ''
+          - '&7Aktuell&F: &e%market_sort_type%'
+          - ''
+          - '&e&lKlicke &7zum Ändern des Filters.'
+        name: <GRADIENT:65B1B4>&LFilter</GRADIENT:2B6F8A>
+      search:
+        lore:
+          - '&7Zum Suchen von Artikeln in'
+          - '&7jedem Markt, der derzeit geöffnet ist.'
+          - ''
+          - '&e&l%left_click% &7Zum Suchen von Märkten.'
+        name: <GRADIENT:65B1B4>&lSuche</GRADIENT:2B6F8A>
+error:
+  at maximum request limit: '&cDu kannst nicht mehr Anfragen stellen!'
+  no permission: '&cDu hast nicht genügend Berechtigungen!'
+  must buy item to review: '&cDu musst mindestens 1 Artikel kaufen, um eine Bewertung
+    abzugeben.'
+  item out of stock: '&cEntschuldigung, dieser Artikel ist jetzt nicht mehr verfügbar.'
+  one fill slot required: '&cDieses Layout erfordert mindestens einen Füllslot!'
+  market name too long: '&cMarktname zu lang, maximal 72 Zeichen.'
+  player not found: '&4%value% &cwurde nicht gefunden!'
+  insufficient bank entry balance: '&cAbhebungsbetrag übersteigt dein gespeichertes
+    Gesamt!'
+  item is air: '&cDu kannst keine Luft in deinen Markt hinzufügen...'
+  at maximum item limit: '&cDu kannst keine weiteren Artikel hinzufügen!'
+  max stack size: '&cDu kannst nicht so viele anfordern, die maximale Stapelgröße
+    beträgt &4%max_stack_size%'
+  take out item: '&cBitte entferne zuerst deinen Artikel aus dem Menü!'
+  not a number: '&4%value% &cist keine gültige Nummer!'
+  cannot pay creation fee: '&cNicht genügend Mittel, um die Erstellungsgebühr zu zahlen.'
+  not enough items: '&cDu hast nicht genügend Artikel, um diese Anfrage zu erfüllen.'
+  no market found: '&cKeinen Markt für &4%player_name% &cgefunden!'
+  requester cannot pay: '&4%requester_name% &chat nicht genug Geld, um dich zu bezahlen!'
+  placed item to add: '&cBitte lege das Element, das du hinzufügen möchtest, in den
+    leeren Slot.'
+  category name used: '&cDu hast bereits eine Kategorie mit dem Namen &4%category_name%.'
+  player offline: '&4%value% &cist derzeit nicht online!'
+  not enough money: '&cDu hast nicht genug Geld!'
+  no categories: '&cDu musst zuerst mindestens 1 Kategorie erstellen.'
+  category name too long: '&cKategoriename zu lang, maximal 32 Zeichen.'
+  not allowed to review: '&cDu musst länger warten, um erneut zu bewerten.'
+  must be higher than zero: '&cBitte gib eine Zahl ein, die größer als Null ist.'
+  offers disabled: '&cAngebote sind deaktiviert.'
+  banned from market: '&4%market_owner% &chat dich von der Anzeige deines Marktes
+    ausgeschlossen!'
+  at maximum category limit: '&cDu kannst keine weiteren Kategorien erstellen.'
+  provide requested item: '&cBitte platzieren/wähle zuerst das angeforderte Element.'
+  not allowed to create: '&cDu darfst keinen Markt erstellen.'
+  item no longer available: '&cSorry, dieser Artikel ist nicht mehr verfügbar.'
+  ratings disabled: '&cBewertungen sind deaktiviert.'
+  review feedback too long: '&cBewertung zu lang, maximal 128 Zeichen.'
+  invalid category: '&cKategorie mit ID&f: &4%category_id% &ckonnte nicht gefunden
+    werden.'
+  market is closed: '&4%market_owner%&cs Markt ist derzeit geschlossen.'
+info:
+  offer:
+    rejected:
+      insufficient stock: '&b%owner_name% &chat Ihr Angebot für &e%market_item_name%
+        &c(abgelaufener Bestand)'
+      no money: '&b%owner_name% &chat Ihr Angebot für &e%market_item_name% &c(abgelaufenes
+        Guthaben)'
+      not accepted: '&b%owner_name% &chat Ihr Angebot für &e%market_item_name% &cwurde
+        abgelehnt!'
+      item not available: '&b%owner_name% &chat Ihr Angebot (Artikel nicht mehr verfügbar)'
+    accepted payment: '&eDie Angebotsanfrage wurde akzeptiert'
+    accepted: '&b%owner_name% &ehat Ihr Angebot für &e%market_item_name% &eangenommen'
+    received: '&b%sender_name% &ehat Ihnen ein Angebot zu einem Artikel gesendet!'
+    sent: '&EIhr Angebot wurde erfolgreich an &b%owner_name% &egesendet'
+  request:
+    fulfilled: '&b%fulfill_name% &ehat deine Anfrage für &e%request_item_name% &erfüllt'
+    payment: '&eEine Anfrage wurde abgeschlossen'
+  deleted market: '&eIhr Markt wurde erfolgreich gelöscht!'
+  defaults:
+    review message: '&bEin großartiger Markt'
+    category name: '&e%market_category_name%'
+    market name: '&e%player_name%s Markt'
+    market description: '&aWillkommen in meinem Markt'
+    category description: '&7Marktkategorie'
+  market sort type:
+    reviews: '&eBewertungen'
+    last updated: '&eZuletzt aktualisiert'
+    name: '&eName'
+    items: '&eGesamtartikel'
+  market item bought:
+    seller: '&fx&a%purchase_quantity% &f%item_name% &ewurde von &b%buyer_name% &gekauft'
+    out of stock: '&EAufgebraucht: Alle &f%item_name% &eBestände wurden verkauft!'
+    buyer: '&eGekauft: &fx&a%purchase_quantity% &f%item_name% &evon &b%seller_name%'
+  offline sales messages:
+    - <center>&e&lMärkte
+    - ''
+    - <center>&7Hey, du hast &a%offline_sales_amount% &7Verkäufe während du offline
+      warst.
+    - <center>&7Verwende &f/&eMärkte transactions &7um die offline-Verkäufe anzuzeigen.
+    - ''
+  admin:
+    removed market: '&eDer Markt von &b%player_name% &ewurde erfolgreich entfernt!'
+  added item to category: '&fx&a%item_quantity% &f%item_name% &ewurde zu &b%category_display_name%
+    &ehinzugefügt'
+prompts:
+  search:
+    subtitle: '&fSuchbegriffe in den Chat eingeben'
+    title: <GRADIENT:65B1B4>&LSuche</GRADIENT:2B6F8A>
+  category name:
+    subtitle: '&fNeuen Namen für Kategorie eingeben'
+    title: <GRADIENT:65B1B4>&LKategoriename</GRADIENT:2B6F8A>
+  market description:
+    subtitle: '&fNeue Beschreibung eingeben'
+    title: <GRADIENT:65B1B4>&LMarktbeschreibung</GRADIENT:2B6F8A>
+  item price:
+    subtitle: '&fPreis in den Chat eingeben'
+    title: <GRADIENT:65B1B4>&LArtikelpreis</GRADIENT:2B6F8A>
+  withdraw bank entry:
+    subtitle: '&fGewünschten Betrag eingeben'
+    title: <GRADIENT:65B1B4>&BBetrag eingeben</GRADIENT:2B6F8A>
+  price:
+    subtitle: '&fGebot eingeben'
+    title: <GRADIENT:65B1B4>&lAngebotspreis</GRADIENT:2B6F8A>
+  market name:
+    subtitle: '&fNeuen Marktnamen eingeben'
+    title: <GRADIENT:65B1B4>&LMarktname</GRADIENT:2B6F8A>
+  new review:
+    subtitle: '&fFeedback eingeben'
+    title: <GRADIENT:65B1B4>&LBewertungsnachricht</GRADIENT:2B6F8A>
+  category description:
+    subtitle: '&fNeue Kategoriebeschreibung eingeben'
+    title: <GRADIENT:65B1B4>&LKategorienbeschreibung</GRADIENT:2B6F8A>
+  offer price:
+    subtitle: '&fAngebotspreis eingeben'
+    title: <GRADIENT:65B1B4>&LAngebotspreis</GRADIENT:2B6F8A>
+  new category:
+    subtitle: '&fNeue Kategorie-ID eingeben'
+    title: <GRADIENT:65B1B4>&lNeue Kategorie</GRADIENT:2B6F8A>
+  request amount:
+    subtitle: '&fGewünschte Menge eingeben'
+    title: <GRADIENT:65B1B4>&lMenge eingeben</GRADIENT:2B6F8A>
+button:
+  number key: 'Drücke die Taste #'
+  left Klickee: LinksKlicke
+  right Klickee: RechtsKlicke
+  left shift Klickee: Umschalttaste+LinksKlicke
+  middle Klickee: Mittlere Klickee
+  drop key: Drücke die Abwurftaste Q
+  right click: Rechts klicken
+  left click: Links klicken
+  middle click: Mitteltaste Klick
+  left shift click: Linksshift Klick
+conditionals:
+  'true': '&aWahr'
+  'false': '&CFalsch'
+  closed: '&cGeschlossen'
+  disabled: '&cDeaktiviert'
+  open: '&aGeöffnet'
+  enabled: '&aAktiviert'
